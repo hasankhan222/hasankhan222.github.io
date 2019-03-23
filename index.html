@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hello Mart</title>
+<link rel="stylesheet" href="blueberry.css"/>
+<style type="text/css">
+* {
+	margin:0px;
+	border:0px;
+	padding:0px;
+}
+body {
+	background:#f0f0f0;
+	font:14px/20px Ariel, San-Serif;
+	color:#555;
+	margin:0px;
+}
+h1 {
+	text-align:center;
+	font-size:180%;
+	line-height:120%;
+	padding:5% 0;
+}
+h2 {
+	text-decoration:underline;
+	line-height:280%;
+	padding-left:2%;
+}
+h3 {
+	line-height:50%;
+	padding:5% 0;
+}
+p {
+	padding:1%;
+}
+img {
+	text-align:center;
+	max-width:100%;
+	height:auto;
+	width:auto;
+}
+a {
+	color:#FFF;
+	text-decoration:none;
+	font-weight:bold;
+}
+a:hover {
+	color:#FFF;
+	text-decoration:underline;
+}
+header {
+	background:#405580;
+	width:100%;
+	height:86px;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:100;
+	opacity:0.90;
+}
+#logo {
+	margin:20px;
+	float:left;
+	width:200px;
+	height:60px;
+	background:url(Untitled-2.png) no-repeat center;
+}
+nav {
+	float:right;
+	padding:35px 20px 20px 0;
+}
+#meny-icon {
+	display:hidden;
+	width:40px;
+	height:40px;
+	background:url(icon.png) center;
+}
+a:hover#meny-icon {
+	border-radius: 4px 4px 0 0;
+}
+ul {
+	list-style:none;
+}
+nav ul li {
+	display:inline-block;
+	float:left;
+	padding:10px;
+}
+.current {
+	color:#FFF;
+	text-decoration:underline;
+}
+#doc {
+	margin:40px 0;
+}
+#content {
+	margin:0 auto;
+	max-width:1140px;
+}
+.blueberry {
+	max-width:960px;
+	margin-top:110px;
+}
+section {
+	width:29%;
+	float:left;
+	margin:2% 2%;
+	text-align:center;
+}
+.clear {
+	clear:both;
+}
+article {
+	float:left;
+	margin:0 auto;
+	width:50%;
+	height:auto;
+	padding:4%;
+}
+aside {
+	float:right;
+	margin:0 auto;
+	width:35%;
+	height:auto;
+	padding:3%;
+}
+ul.gym li {
+	padding-left:3%;
+}
+footer {
+	background:#333333;
+	width:100%;
+	overflow:hidden;
+	opacity:0.90;
+}
+footer p, footer h3 {
+	color:#FFF;
+}
+footer p a {
+	color:#FFF;
+	text-decoration:none;
+}
+footer.second {
+	border-top:1px solid #4D4E50;
+	background-color:#333333;
+	max-height:50px;
+	text-align:center;
+	opacity:0.95;
+}
+/*------------------MEDIA!!!-------------*/
+@media screen and (max-width:478px) {
+	body {
+		position:absolute;
+	}
+}
+@media screen and (max-width:740px) {
+	header {
+		position:absolute;
+	}
+	#meny-icon {
+		display:inline-block;
+	}
+	nav ul, nav:active ul {
+		display:none;
+		position:absolute;
+		padding:20px;
+		background:#405580;
+		border:1px solid #FFF;
+		right:20px;
+		top:60px;
+		width:50%;
+		border-radius:2px 0 2px 2px;
+	}
+	nav li {
+		text-align:center;
+		width:100%;
+		padding:10px 0;
+		margin:0;
+	}
+	nav:hover ul {
+		display:block;
+	}
+	section {
+		float:left;
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+	article {
+		float:left;
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+	aside {
+		float:left;
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+<script src="jquery.blueberry.js"></script>
+<script>
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});	
+</script>
+</head>
+
+<body>
+<header>
+<a href="#" id="logo"></a>
+<nav>
+<a href="#" id="meny-icon"></a>
+<ul>
+	<li><a ref="#" class="current">Home</a></li>
+    <li><a ref="#">Products</a></li>
+    <li><a ref="#">About us</a></li>
+    <li><a ref="#">Contact</a></li> 
+</ul>
+</nav>
+</header>
+<div id="doc">
+	<div id="content">
+    	<div class="blueberry">
+        	<ul class="slides">
+            	<li><img src="Main.png"></li>
+                <li><img src="2nd main.png"></li>
+                <li><img src="3rd main.png"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<section>
+<img src="1458778861_icon-ios7-people.png">
+<h1>Best Customer Support</h1>
+<p><h3>Bestest Best Support</h3></p>
+</section>
+<section>
+<img src="1458778894_ic_local_grocery_store_48px.png">
+<h1>Best Grocery Store</h1>
+<p><h3>Bestest Best Store</h3></p>
+</section>
+<section>
+<img src="1458778892_checkmark.png">
+<h1>Best Quality</h1>
+<p><h3>Bestest Best Quality<h3></p>
+</section>
+<div class="clear"></div>
+<article>
+	<img src="fruits.png">
+</article>
+<aside>
+	<h2>Fresh Fruits</h2>
+    <ul class="gym">
+    	<li><h3>Sweet Smell</h3></li>
+        <li><h3>Delicious Taste</h3></li>
+    </ul>
+</aside>
+<div class="clear"></div>
+<section>
+<h1>Namaz Room</h1>
+<img src="last 2.png">
+<p>Quiet Place for Namaz Room</p>
+</section>
+<section>
+<h1>The Gym Floor</h1>
+<img src="last 3.png">
+<p>To Keep You Healthy</p>
+</section>
+<section>
+<h1>Play Area</h1>
+<img src="last 1.png">
+<p>Play Area for kids so you can shop peacefully</p>
+</section>
+<footer>
+	<section>
+    	<h3><b>Talk to us</b></h3>
+        <p><b>0900-78601</b><br><br>
+        Kashmir Road, Karachi</p>
+    </section>
+    <section>
+    	<img src="1458781198_phone.png">
+    </section>
+</footer>
+<footer class="second">
+	<p>© 2016 Hello Mart Pakistan, All rights reserved</p>
+</footer>
+</body>
+</html>
